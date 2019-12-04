@@ -1,138 +1,130 @@
 <template>
-<view class="container">
-	<button type="primary" @tap="show('111')">1111</button>
-	<view class="content" >
-		<view class="topTab" 
-		v-for="(item,index) in data" 
-		:key="index"
-		:class="{selected:currentIdex==index}"
-		@click="tapClick(index,ref)"
-		>
-			{{item.name}}
+	<view>
+		<view class="QS-tabs-box">
+			<QSTabs 
+			ref="tabs" 
+			:tabs="tabs" 
+			animationMode="line3" 
+			:current="current" 
+			@change="change"
+			activeColor="#adadad"
+			lineColor="#f1505c"
+			swiperWidth="750"
+			>
+			</QSTabs>
 		</view>
-	</view>
-	
-	<Content  ref=content>
-		<swiper :autoplay="true" :interval="3000" :duration="1000" 
-		class="shopList"
-		 >
-			<swiper-item  
-			v-for="(item,index) in dataImg"
-			:key="index"
-			class="swiper-item"
-		 >
-				<view class="title">{{item.title}}</view>
-				<view class="author">{{item.author}}</view>
-				<view class="img">
-					<image :src="item.images"></image>
-				</view>
+		<swiper 
+		:style="{'height': '1200upx'}" 
+		:current="swiperCurrent" 
+		@transition="transition"
+		@animationfinish="animationfinish">
+			<swiper-item class="swiper-item" v-for="(item, index) in tabs" :key="index">
+				<scroll-view scroll-y style="height: 100%;width: 100%;" >
+					<view class="scroll-items">
+						<view class="scroll-item" v-for="(ite, ind) in 3" :key="ind">
+							<view class="scroll-item-image-box">
+								<image src="/static/img.jpg" mode="aspectFill" class="scroll-item-image"></image>
+							</view>
+							<view class="scroll-item-text-box">
+								<view>
+									小调皮
+								</view>
+								
+							</view>
+						</view>
+					</view>
+				</scroll-view>
 			</swiper-item>
-			
 		</swiper>
-		
-				
-	</Content>
-	
-		<QSPopup  ref='111' type='fadeInUp'>
-			
-			<view style="width: 500upx;height: 400upx;background: red;">oooo000</view>
-		</QSPopup>
-
-
-	<view style="width: 500upx;height: 400upx;background: red;" v-show="isshow">oooo000</view>	
-	
-</view>
-
-	
+	</view>
 </template>
 
 <script>
-	// import popupLayer from '../../components/popup-layer/popup-layer.vue';
-	import QSPopup from '../../components/QS-popup/QS-popup.vue'
-	import Content from '../../components/content/content.vue'
-	import json from '@/json'
+	import QSTabs from '../../components/QS-tabs/QS-tabs.vue';
+	const Sys = uni.getSystemInfoSync();
+	const wH = Sys.windowHeight;
+	let n = 1;
+	const tabs = Array(5).fill('').map(()=> 'tab' + Array(n).fill('s').join('') + n++);
+	
 	export default {
+		components: {
+			QSTabs
+		},
 		data() {
 			return {
-				boolShow:false,
-				color:'#FF0060',
-				isshow:0,
-				data:[],
-				currentIdex:0,
-				dataImg:[],
-				 animationData: {},	
+				tabs:[...tabs],
+				current: 0,
+				swiperCurrent: 0,
+				tabsHeight: 0,
+				dx: 0
 			}
 		},
-		onLoad() {
-			this.data =json.tabList
-			this.dataImg =json.newsList
-			var animation = uni.createAnimation({
-			      duration: 1000,
-			        timingFunction: 'ease',
-			   })
+		onReady() {
+			let n=1
+			const arr = Array(5).fill('').map(()=> 'tab' + Array(n).fill('s').join('')+ n++ )
+			const newArr =[...arr]
+			console.log(arr)
+			console.log(newArr)
 		},
-		components:{
-			QSPopup,
-			Content
-		},
+		
 		methods: {
-			
-			show(ref) {
-				this.$refs[ref].show();
-				// console.log(this.$refs) 
+			change(index) {
+				this.swiperCurrent = index;
 			},
-			tapClick(index,ref){
-				this.currentIdex=index
-				// console.log(this.$refs.content.$el)
-				var tes1=this.$refs.content.$el
-				
+			transition({ detail: { dx } }) {
+				this.$refs.tabs.setDx(dx);
 			},
-			
+			animationfinish({detail: { current }}) {
+				this.$refs.tabs.setFinishCurrent(current);
+				this.swiperCurrent = current;
+				this.current = current;
+			}
 		}
 	}
 </script>
 
-<style lang="scss" scoped>
-.content{
-	width: 100%;
-	height: 80upx;
-	background: skyblue;
-	display: flex;
-	flex-direction: row;
-	justify-content:space-around;
-	align-items: center;
-
-}
-.topTab{
-		height:100%;
-		line-height: 80upx;
-		background: #ccc;
-		width: 60upx;
-		margin-right: 10upx;
-		font-size: 30upx;
-	}
-.selected{
-		background: pink;
-		color: #4CD964;
-		border-bottom: 2upx solid #000;
-	}
-	.shopList{
+<style scoped>
+	.QS-tabs-box{
 		width: 100%;
-		height: 1400upx;
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		background-color: white;
 	}
-	.shopList .swiper-item{
+	.swiper-item{
+		background-color: #fff;
+	}
+	.scroll-items{
+		display: flex;
+		flex-direction: column;
 		width: 100%;
-		height: 100%;
+		padding: 40rpx;
 	}
-	.shopList .title{
-		font-size: 40upx;
+	.scroll-item{
+		margin-top: 15rpx;
+		padding: 25rpx;
+		background-color: white;
+		border-radius: 8rpx;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		border: 1px solid #f8f8f8;
+	}
+	.scroll-item-image-box{
+		flex-grow: 0;
+	}
+	.scroll-item-text-box{
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		font-size: 28rpx;
 		font-weight: bold;
-		color: #000;
+		margin-left: 15rpx;
 	}
-	.shopList .author{
-		font-size: 15px;
-		color: #ccc;
+	.scroll-item-image{
+		border-radius: 4rpx;
+		width: 180rpx;
+		height: 150rpx;
 	}
-	
-	
 </style>
