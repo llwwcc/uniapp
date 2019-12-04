@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "商品",
+  "usingComponents": {
+    "q-s-popup": "/components/QS-popup/QS-popup",
+    "yp-number-box": "/components/yp-number-box/yp-number-box",
+    "popup-layer": "/components/popup-layer/popup-layer"
+  }
+}

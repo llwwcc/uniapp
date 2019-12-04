@@ -1,0 +1,405 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.container.data-v-98b58ca6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 750rpx;
+  min-height: 100rpx;
+}
+.shopMessage.data-v-98b58ca6 {
+  width: 750rpx;
+  height: 750rpx;
+  position: relative;
+}
+.shopMessage image.data-v-98b58ca6 {
+  width: 100%;
+  height: 100%;
+}
+.navBar image.data-v-98b58ca6 {
+  position: absolute;
+  top: 30rpx;
+  right: 4%;
+  width: 200rpx;
+  height: 68rpx;
+}
+.des.data-v-98b58ca6 {
+  margin-top: 20rpx;
+  margin-left: 4%;
+  visibility: middle;
+}
+.buyContent.data-v-98b58ca6 {
+  font-size: 26rpx;
+  color: #FF0F6A;
+  font-weight: bold;
+  margin-right: 20rpx;
+}
+.buyPrice.data-v-98b58ca6 {
+  font-size: 40rpx;
+  color: #FF0F6A;
+  font-weight: bold;
+  margin-right: 24rpx;
+}
+.delPrice.data-v-98b58ca6 {
+  font-size: 32rpx;
+  color: #BBBBBB;
+}
+.integral.data-v-98b58ca6 {
+  margin-top: 7rpx;
+}
+.jifen.data-v-98b58ca6 {
+  width: 80rpx;
+  height: 42rpx;
+  background: #FF0060;
+  color: #FF9DC1;
+  font-size: 30rpx;
+  padding: 2rpx 8rpx;
+  border-radius: 20rpx;
+  margin-right: 20rpx;
+}
+.jifen1.data-v-98b58ca6 {
+  width: 156rpx;
+  height: 42rpx;
+  background: #fff;
+  border: 2rpx solid #FF2E7D;
+  border-radius: 20rpx;
+  color: #FF2E7D;
+  font-size: 30rpx;
+  padding: 0 14rpx;
+  margin-right: 20rpx;
+}
+.jifen2.data-v-98b58ca6 {
+  width: 156rpx;
+  height: 42rpx;
+  background: #fff;
+  border: 2rpx solid #FF2E7D;
+  border-radius: 20rpx;
+  color: #FF2E7D;
+  font-size: 30rpx;
+  padding: 0 14rpx;
+}
+.content.data-v-98b58ca6 {
+  margin-top: 20rpx;
+}
+.content .contentName.data-v-98b58ca6 {
+  width: 392px;
+  height: 40rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.content .contentDes.data-v-98b58ca6 {
+  display: block;
+  width: 640rpx;
+  height: 56rpx;
+  margin-top: 10rpx;
+  font-size: 20rpx;
+  color: #A7A7A7;
+}
+.shopDetail.data-v-98b58ca6 {
+  margin-top: 40rpx;
+}
+.shopDetail .detail.data-v-98b58ca6, .like .detail.data-v-98b58ca6 {
+  border-left: 6rpx solid #FF0060;
+  width: 220rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding-left: 10rpx;
+  font-weight: bold;
+}
+.brand.data-v-98b58ca6 {
+  margin-top: 30rpx;
+  border-top: 2rpx solid #D1D1D1;
+  padding: 10rpx 10rpx;
+}
+.brand .brandBB.data-v-98b58ca6 {
+  width: 48rpx;
+  height: 34rpx;
+  font-size: 34rpx;
+  color: #D1D1D1;
+  margin-right: 160rpx;
+}
+.brand .brandName.data-v-98b58ca6 {
+  width: 72rpx;
+  height: 34rpx;
+  font-size: 34rpx;
+  color: #626262;
+  font-weight: bold;
+}
+.place.data-v-98b58ca6 {
+  margin-top: 14rpx;
+  border-top: 2rpx solid #D1D1D1;
+  padding: 10rpx 10rpx;
+}
+.place .Place.data-v-98b58ca6 {
+  width: 48rpx;
+  height: 34rpx;
+  font-size: 34rpx;
+  color: #D1D1D1;
+  margin-right: 160rpx;
+}
+.place .PlaceName.data-v-98b58ca6 {
+  width: 72rpx;
+  height: 34rpx;
+  font-size: 34rpx;
+  color: #626262;
+  font-weight: bold;
+}
+.weight.data-v-98b58ca6 {
+  margin-top: 14rpx;
+  border-top: 2rpx solid #D1D1D1;
+  padding: 10rpx 10rpx;
+}
+.weight .Weight.data-v-98b58ca6 {
+  width: 48rpx;
+  height: 34rpx;
+  font-size: 34rpx;
+  color: #D1D1D1;
+  margin-right: 124rpx;
+}
+.weight .WeightKg.data-v-98b58ca6 {
+  width: 72rpx;
+  height: 34rpx;
+  font-size: 34rpx;
+  color: #626262;
+  font-weight: bold;
+}
+.way.data-v-98b58ca6 {
+  margin-top: 14rpx;
+  border-top: 2rpx solid #D1D1D1;
+  padding: 16rpx 10rpx;
+  border-bottom: 2rpx solid #D1D1D1;
+}
+.way .Way.data-v-98b58ca6 {
+  width: 48rpx;
+  height: 34rpx;
+  font-size: 34rpx;
+  color: #D1D1D1;
+  margin-right: 88rpx;
+}
+.way .Wayff.data-v-98b58ca6 {
+  width: 72rpx;
+  height: 34rpx;
+  font-size: 34rpx;
+  color: #626262;
+  font-weight: bold;
+}
+.button.data-v-98b58ca6 {
+  margin-top: 12rpx;
+  margin-left: 43%;
+}
+.button text.data-v-98b58ca6 {
+  font-size: 34rpx;
+  color: #BEBEBE;
+  margin-right: 10rpx;
+}
+.button image.data-v-98b58ca6 {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.middleImage.data-v-98b58ca6 {
+  margin-top: 44rpx;
+}
+.middleImage image.data-v-98b58ca6 {
+  width: 750rpx;
+  height: 750rpx;
+}
+.like.data-v-98b58ca6 {
+  margin-top: 40rpx;
+}
+.list.data-v-98b58ca6 {
+  margin-top: 20rpx;
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 708rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.list .item.data-v-98b58ca6 {
+  margin-top: 30rpx;
+  width: 336rpx;
+  margin-right: 18rpx;
+}
+.list .item image.data-v-98b58ca6 {
+  width: 336rpx;
+  height: 220rpx;
+}
+.listDsc .listDscContent.data-v-98b58ca6 {
+  width: 280px;
+  height: 28rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.listDsc .listDscdes.data-v-98b58ca6 {
+  display: block;
+  width: 316rpx;
+  height: 44rpx;
+  margin-top: 10rpx;
+  font-size: 20rpx;
+  color: #A7A7A7;
+}
+.foot.data-v-98b58ca6 {
+  margin-top: 68rpx;
+}
+.listPrice.data-v-98b58ca6 {
+  font-size: 36rpx;
+  color: #FF5092;
+  font-weight: bold;
+}
+.listRec.data-v-98b58ca6 {
+  float: right;
+  font-size: 26rpx;
+  color: #BBBBBB;
+  padding-top: 8rpx;
+}
+.Footer.data-v-98b58ca6 {
+  margin-top: 30rpx;
+  width: 100%;
+  height: 98rpx;
+  background: #FF106A;
+  text-align: center;
+  line-height: 98rpx;
+  color: #fff;
+  font-size: 40rpx;
+}
+.popup.data-v-98b58ca6 {
+  width: 800rpx;
+  min-height: 100rpx;
+  background: #fff;
+}
+.message.data-v-98b58ca6 {
+  position: relative;
+  margin-left: 4%;
+}
+.smallImg.data-v-98b58ca6 {
+  position: absolute;
+  top: -58rpx;
+  left: -46rpx;
+  width: 260rpx;
+  height: 260rpx;
+  background: #fff;
+  text-align: center;
+}
+.smallImg image.data-v-98b58ca6 {
+  width: 240rpx;
+  height: 240rpx;
+}
+.information.data-v-98b58ca6 {
+  position: absolute;
+  top: 10rpx;
+  left: 35%;
+}
+.information .dec.data-v-98b58ca6 {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.information .price.data-v-98b58ca6 {
+  margin-top: 20rpx;
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #FF0463;
+}
+.information .inventory.data-v-98b58ca6 {
+  margin-top: 22rpx;
+  font-size: 30rpx;
+  color: #8C8C8C;
+}
+.Mess.data-v-98b58ca6 {
+  margin-left: 4%;
+  margin-right: 4%;
+  height: 220rpx;
+  border-bottom: 2rpx solid #D2D2D2;
+}
+.shopInfo.data-v-98b58ca6 {
+  margin-top: 18rpx;
+  margin-left: 4%;
+}
+.num.data-v-98b58ca6 {
+  font-size: 40rpx;
+  color: #B8B8B8;
+}
+.shopInfo .style.data-v-98b58ca6 {
+  margin-top: 10rpx;
+}
+.shopInfo .style text.data-v-98b58ca6 {
+  width: 152rpx;
+  height: 42rpx;
+  border-radius: 30rpx;
+  font-size: 30rpx;
+  padding: 4rpx 40rpx;
+  margin-right: 40rpx;
+}
+.shopInfo .select.data-v-98b58ca6 {
+  background: #FF0060;
+  color: #fff;
+}
+.shopInfo .img.data-v-98b58ca6 {
+  margin-top: 20rpx;
+  position: relative;
+}
+.shopInfo .img text.data-v-98b58ca6 {
+  font-size: 40rpx;
+  color: #B8B8B8;
+  margin-right: 53.3%;
+}
+.shopInfo .img image.data-v-98b58ca6 {
+  width: 234rpx;
+  height: 56rpx;
+  vertical-align: middle;
+}
+.shopInfo .img .ImgNum.data-v-98b58ca6 {
+  position: absolute;
+  top: 4rpx;
+  right: 130rpx;
+}
+.footer.data-v-98b58ca6 {
+  margin-top: 40rpx;
+  width: 100%;
+  height: 98rpx;
+  background: #FF106A;
+  color: #fff;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 98rpx;
+}
+

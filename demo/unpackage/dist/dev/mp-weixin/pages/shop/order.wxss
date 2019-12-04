@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.content.data-v-f2d17808 {
+  width: 100%;
+  background: #F5F5F5;
+  min-height: 100rpx;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.order-header.data-v-f2d17808 {
+  height: 180rpx;
+  padding: 20rpx 20rpx;
+  border-radius: 30rpx;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVkAAABPCAMAAAB21EbbAAAASFBMVEVHcEz////////////jSUnTAADUAAD09Pz////////TAAD////////TAAAmV/9/nP9Kc/+5yf/xra3ncnLbLi7kYWH529v52tr77n4ZAAAADHRSTlMAVaRRA5NS/doF2oqrNxyxAAABeElEQVR42u3d226CQBQF0AG5ar1r+/9/WkHTSxxsxJmXZu1XcthmxZzAyxDCkL4ou/ZNXk/blUUfvrLokCRMt7i5VisYibOqRlmwGWjHVcAhQy4Lobdjs+zaPhQUsqQIJYQsKYNlkGkdBC8ImV4ZAoNMIUuWrJAlS1bIkiUrZMmSFbJkyQpZsmSFLFmyQpYsWSFLlqyQJUtWyJIlK2TJkhWyZMkKWbJkhSxZIUuWrJAlS1bIkiUrZMmSFbJk/5GscxHzpHWWZ6Z0zp/NlNKZyZlSOOc70zLoQ2jWkZyHq/tNNNvLpeN6cmo7OfRwLHnZvK5UZc1w7H99f6NTO92/u1w6ROsfTO3GR5Cnx14om9eVqqy+fgTknvZ9eGzYTd7pI1p/nYr/6hH20Vjqsnldqcrq6vZ9lWb5+8JhcIj3b/aXjlO0/jD9q/fjE970WPKyeV2JypbN9yeBqqb+gXucXirjnc7R+uNfS/bpsRfK5nWlKFvWzfUP+wnUQwONikOLqgAAAABJRU5ErkJggg==) no-repeat;
+  background-size: cover;
+}
+.order-header image.data-v-f2d17808 {
+    width: 30px;
+    height: 30px;
+}
+.order-header-div ._p.data-v-f2d17808 {
+  font-size: 30rpx;
+  color: #3B3B3B;
+}
+.order-header-div ._p.data-v-f2d17808:nth-of-type(1) {
+  margin-bottom: 15rpx;
+}
+.order-header-div ._p:nth-of-type(1) text.data-v-f2d17808 {
+    padding-left: 50rpx;
+}
+.order-header-div ._p.data-v-f2d17808:nth-of-type(2) {
+  color: #989898;
+}
+.order-main.data-v-f2d17808 {
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  background: #fff;
+  margin-top: 15px;
+}
+.shop-div.data-v-f2d17808 {
+  width: 93%;
+  height: 265rpx;
+  background: #fff;
+  padding: 10rpx 22rpx;
+  border-radius: 15px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.shop-div image.data-v-f2d17808 {
+    width: 100px;
+    height: 100px;
+    margin-right: 20rpx;
+}
+.shop-div1.data-v-f2d17808 {
+  margin-right: 30rpx;
+}
+.shop-div1 ._h5.data-v-f2d17808 {
+    font-size: 14px;
+    color: #9D9D9D;
+    margin-top: 5px;
+}
+.shop-div1 ._p.data-v-f2d17808 {
+    font-size: 22rpx;
+    margin-top: 6rpx;
+    color: #7C7C7C;
+}
+.shop-div1 ._p.data-v-f2d17808:nth-of-type(1) {
+    color: #7C7C7C;
+}
+.shop-div1 ._p.data-v-f2d17808:nth-of-type(2) {
+    color: #FF0060;
+    font-size: 17px;
+}
+.shop-div1 ._p.data-v-f2d17808:nth-of-type(3) {
+    color: #FF0060;
+    margin-top: 10rpx;
+}
+.shop-div1 ._p:nth-of-type(3) > text.data-v-f2d17808 {
+    color: #000000;
+    margin-left: 160rpx;
+    font-size: 24rpx;
+}
+.shop-div1 image.data-v-f2d17808 {
+    width: 50%;
+    height: 50rpx;
+    margin-top: 22rpx;
+}
+.shop-div2 view.data-v-f2d17808 {
+  width: 94%;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 22rpx;
+  color: #626262;
+  font-size: 30rpx;
+  border-top: 1px solid #E6E6E6;
+}
+.shop-div2 .Num .empty.data-v-f2d17808 {
+  margin-right: 60%;
+}
+.shop-div2 .Num .less.data-v-f2d17808, .add.data-v-f2d17808 {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 50%;
+  background: #D2D2D2;
+  font-size: 45rpx;
+  color: #A8A8A8;
+}
+.shop-div2 .Num .less.data-v-f2d17808 {
+  margin-right: 30rpx;
+}
+.shop-div2 .Num .unm.data-v-f2d17808 {
+  font-size: 38rpx;
+  margin-right: 30rpx;
+}
+.shop-div2 .word > text.data-v-f2d17808 {
+  font-size: 26rpx;
+  margin-left: 40rpx;
+  color: #E4E4E4;
+}
+.Footer.data-v-f2d17808 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 112rpx;
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.Footer .pay.data-v-f2d17808 {
+  width: 60%;
+  height: 112rpx;
+  background: #ffff;
+  margin-left: 9.8%;
+}
+.Footer .pay .realyPay.data-v-f2d17808 {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-right: 20rpx;
+}
+.Footer .pay .realyPayPrice.data-v-f2d17808 {
+  font-size: 46rpx;
+  color: #FF106A;
+  font-weight: bold;
+  margin-right: 20rpx;
+}
+.Footer .pay .realyPayTran.data-v-f2d17808 {
+  font-size: 26rpx;
+  color: #FF106A;
+  font-weight: bold;
+}
+.Footer .pay .realyPayAccept.data-v-f2d17808 {
+  display: block;
+  font-size: 30rpx;
+  color: #FF106A;
+}
+.Footer .rushPay.data-v-f2d17808 {
+  width: 40%;
+  height: 112rpx;
+  line-height: 112rpx;
+  text-align: center;
+  color: #fff;
+  background: #FF106A;
+  overflow: hidden;
+}
+
