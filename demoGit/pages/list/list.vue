@@ -23,7 +23,7 @@
 					<view class="scroll-items">
 						<view class="scroll-item" v-for="(ite, ind) in 3" :key="ind">
 							<view class="scroll-item-image-box">
-								<image src="/static/img.jpg" mode="aspectFill" class="scroll-item-image"></image>
+								<image src="/static/shop_3.png" mode="aspectFill" class="scroll-item-image"></image>
 							</view>
 							<view class="scroll-item-text-box">
 								<view>
